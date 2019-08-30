@@ -1,0 +1,23 @@
+前台(所有人都可以看到的东西)
+|--<get>'/' 首页
+|
+|--<get>'/page' 文章内容浏览页面
+|
+|--<post> '/submitCommend' 提交评论
+|
+|
+|
+后台(管理员才能看到的东西，发布文章，审核评论)
+|--<get>'/admin' 管理员首页
+|
+|--<post>'/admin/uploadPage' 发布文章
+|
+|--<get>'/admin/login' 登录页面
+|
+|--<post>'/admin/login' 提交用户名及密码
+|
+|--<get> '/admin/passComment' 通过审核接口
+|
+|--<get> '/admin/nopassComment' 不通过审核接口 
+|
+|--<get> '/admin/getComment' 获取所有state 0 评论

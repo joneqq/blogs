@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="./js/jq.js"></script>
+    <script src="./boot/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="./boot/css/bootstrap.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="page-header">
+            <h1>马强的个人博客<small> 这小子真帅</small></h1>
+        </div>
+        <div class="row">
+                <% data.forEach(function(e){ %>
+                    <div class="col-sm-6 col-md-4">
+                        <div class="thumbnail">
+                            <div class="caption">
+                               <a href="/page?id=<%= e._id %>">
+                               <h3> <%= e.title  %></h3>
+                               </a>
+                               <p><%= e.intor %></p>
+                               <p>
+                                   <a href="#" class="btn btn-primary" role="button">修改</a>
+                                   <a href="#" class="btn btn-default" role="button">删除</a>
+                                </p>
+                                <p><%= e.date %></p>
+                            </div>
+                        </div>
+                      </div>
+                <% }) %>
+        </div>
+    </div>
+</body>
+
+</html>

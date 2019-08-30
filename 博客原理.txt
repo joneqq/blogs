@@ -1,0 +1,33 @@
+1.主人   author   -- bootstarp  
+2.简介   intor
+3.列表   title
+4.内容   content
+5.评论   comment
+6.id     id
+7.日期   date
+
+评论如何关联文章
+id         评论的id
+fromId     所关联文章的id
+content    评论内容
+author     评论的作者
+date       评论的时间
+
+实现功能
+1.首页访问
+2.文章页面访问
+3.评论加载
+4.发表评论
+
+发表文章功能
+1.title
+2.intor
+3.content
+4.date
+5.author
+
+审核评论
+用户发表评论--> 携带一个state属性  初始化为0 -->后台 -->写入到数据库 --> 个人页面 -->审核评论
+-->展示所有state 0 的评论 --> 审核 --> state 1通过 --> state 2不通过-->
+-->前端/page 向数据库索取评论数据 --> 如果state 1 展示(渲染模板)
+
